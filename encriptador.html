@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/diamod.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="master">
+        <img src="imagenes/Logo.png" alt="" class="logo">
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="master">
+            <div class="encriptador">
+                
+                <form class="encriptador_form">
+                    <div class="texto_en_area">
+                        <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="texto_info">
+                            <div class="info">
+                                <img src="imagenes/bi_exclamation-circle-fill.png" alt="">
+                                <p id="advertencia">Solo letras minúsculas</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="btn">
+                            <button class="btn_encriptar" onclick="encriptar()" type="button">Encriptar</button>
+                            <button class="btn_desencriptar" onclick="desencriptar()" type="button">Desencriptar</button>
+                        </div>
+                    </div>
+                </form>
+                
+                
+                <div class="resultado">
+                    
+                    <div class="contenedor_resultado">
+                        <div class="contenido_no_resuelto" id="noResuelto">
+                            <div class="imagen_resultado">
+                                <img src="imagenes/Muñeco.png" alt="Muñeco">
+                            </div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        
+                        <div class="contenido_resuelto" id="resuelto">
+                            <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                            <button id="copiar" onclick="copiar()" type="button">Copiar</button>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <p class="copyright">© Creado por <a href="https://github.com/brandonvalenzuela" target="_blank" rel="noopener noreferrer">Brandon :)</a></p>
+</footer>
+</html>
+<script src="app.js"></script>
