@@ -20,11 +20,10 @@
 <body>
     <main>
         <div class="master">
-            <div class="encriptador">
-                
+            <div class="encriptador">        
                 <form class="encriptador_form">
                     <div class="texto_en_area">
-                        <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui"></textarea>
+                        <textarea id="texto" name="texto" placeholder="Ingrese el texto aqui" onkeypress="return validar(event)"></textarea>
                         <div class="texto_info">
                             <div class="info">
                                 <img src="imagenes/bi_exclamation-circle-fill.png" alt="">

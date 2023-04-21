@@ -1,3 +1,4 @@
+
 const diccionarioEncriptar = {
     "a": "ai",
     "e": "enter",
@@ -13,6 +14,16 @@ const diccionarioDesencriptar = {
     "ober": "o",
     "ufat": "u"
 };
+
+function validar(event) {
+    var caracter = String.fromCharCode(event.keyCode);
+    var permitidos = /[a-z]/; // Expresión regular que permite solo letras en minúscula
+    if (!permitidos.test(caracter)) {
+        event.preventDefault();
+        return false;
+    }
+}
+
 
 function encriptar() {
     const texto = document.getElementById("texto").value.toLowerCase();

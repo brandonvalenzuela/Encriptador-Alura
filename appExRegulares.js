@@ -1,3 +1,14 @@
+
+function validar(event) {
+    var caracter = String.fromCharCode(event.keyCode);
+    var permitidos = /[a-z]/; // Expresión regular que permite solo letras en minúscula
+    if (!permitidos.test(caracter)) {
+        event.preventDefault();
+        return false;
+    }
+}
+
+
 function encriptar() {
 
     resultado = "";
