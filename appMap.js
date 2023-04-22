@@ -26,7 +26,9 @@ function validar(event) {
 function minusculas(texto) {
     var minusculas = true;
     for (let i = 0; i < texto.length; i++) {
-        if (texto[i] != " " && texto[i] == texto[i].toUpperCase()) {
+        if (texto[i].match(/[a-z]/) && texto[i] != " " && texto[i] == texto[i].toUpperCase()) {
+            minusculas = false;
+        }else if (texto[i].match(/[A-Z]/)){
             minusculas = false;
             break;
         }
