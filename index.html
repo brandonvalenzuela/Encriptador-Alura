@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <header>
     <div class="master">
         <img src="imagenes/Logo.png" alt="" class="logo">
@@ -28,21 +29,15 @@
                             <div class="info">
                                 <img src="imagenes/bi_exclamation-circle-fill.png" alt="">
                                 <p id="advertencia">Solo letras minúsculas</p>
-                                
-                            </div>
-                            
-                        </div>
-                        
+                            </div>  
+                        </div>         
                         <div class="btn">
                             <button class="btn_encriptar" onclick="encriptar()" type="button">Encriptar</button>
                             <button class="btn_desencriptar" onclick="desencriptar()" type="button">Desencriptar</button>
                         </div>
                     </div>
                 </form>
-                
-                
-                <div class="resultado">
-                    
+                <div class="resultado">  
                     <div class="contenedor_resultado">
                         <div class="contenido_no_resuelto" id="noResuelto">
                             <div class="imagen_resultado">
@@ -50,8 +45,7 @@
                             </div>
                             <p>Ningún mensaje fue encontrado</p>
                             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-                        </div>
-                        
+                        </div>           
                         <div class="contenido_resuelto" id="resuelto">
                             <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
                             <button id="copiar" onclick="copiar()" type="button">Copiar</button>
@@ -62,8 +56,10 @@
         </div>
     </main>
 </body>
+
 <footer>
     <p class="copyright">© Creado por <a href="https://github.com/brandonvalenzuela" target="_blank" rel="noopener noreferrer">Brandon :)</a></p>
 </footer>
+
 </html>
 <script src="appExRegulares.js" src="appMap.js"></script>
